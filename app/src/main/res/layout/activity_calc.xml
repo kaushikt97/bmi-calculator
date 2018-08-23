@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_shadow_start_color"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.android.kaushiktiwari.bmi_calculator.CalcActivity">
+
+
+    <TextView
+        android:id="@+id/tvData4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvData3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Between 25 to 29.9 is Overweight"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvData5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvData4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="More than 30 is Obese"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvData5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tvData5"
+        android:layout_toRightOf="@+id/tvData5"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <TextView
+        android:id="@+id/tvData3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Between 18.5 to 24.9 is Normal"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvData2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvData2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Below 18.5 is Underweight"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="20sp"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/tvData1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvData1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="11dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:text="Share"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/btnSave"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/btnSave"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:text="SAVE"
+        android:textColor="@color/gray"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="3000"
+        app:sub_btn_line_color="@android:color/holo_green_light"
+        app:sub_btn_ripple_color="@android:color/holo_green_light"
+        app:sub_btn_tick_color="@color/white"
+        android:layout_alignTop="@+id/fabCall"
+        android:layout_alignLeft="@+id/tvData5"
+        android:layout_alignStart="@+id/tvData5" />
+
+
+</RelativeLayout>
